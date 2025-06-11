@@ -7,11 +7,13 @@ const Footer = () => {
   return (
     <footer className="relative bg-black  text-white text-normal mt-10">
       <div className="absolute inset-0">
-        <img
-          src={footerImg}
-          alt="Footer_Img"
-          className="w-full h-full object-cover "
-        />
+        <Link to="/">
+          <img
+            src={footerImg}
+            alt="Footer_Img"
+            className="w-full h-full object-cover"
+          />
+        </Link>
         <div className="absolute inset-0 mix-blend-multiply"></div>
       </div>
 
