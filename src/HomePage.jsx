@@ -7,6 +7,7 @@ import img5 from "./assets/Bitmap5.png";
 import img6 from "./assets/Bitmap6.png";
 import { useState } from "react";
 import Footer from "./Footer/Footer";
+import { useNavigate } from "react-router-dom";
 
 const testimonials = [
   {
@@ -22,6 +23,8 @@ const testimonials = [
   },
 ];
 const HomePage = () => {
+  const navigate = useNavigate();
+
   const [current, setCurrent] = useState(0);
   const total = testimonials.length;
 
@@ -48,11 +51,13 @@ const HomePage = () => {
               Bespoke & made to measure <br />
               handmade kitchen design
             </p>
-            <a href="/shop">
-              <button className="mt-4 px-10 py-3 border bg-primary border-primary font-sans font-light text-white rounded-full hover:bg-secondary hover:border-secondary  transition">
-                ORDER NOW
-              </button>
-            </a>
+
+            <button
+              onClick={() => navigate("/shop")}
+              className="mt-4 px-10 py-3 border bg-primary border-primary font-sans font-light text-white rounded-full hover:bg-secondary hover:border-secondary  transition"
+            >
+              ORDER NOW
+            </button>
           </div>
         </div>
         <div className="flex justify-center items-center gap-3 mt-10 mb-6">
@@ -90,11 +95,12 @@ const HomePage = () => {
               nisi ut aliquip ex ea commodo consequat.
             </p>
 
-            <a href="/about">
-              <button className="mt-2 px-8 py-3 border font-sans bg-primary border-primary text-white rounded-full hover:bg-secondary hover:border-secondary transition">
-                ABOUT US
-              </button>
-            </a>
+            <button
+              onClick={() => navigate("/about")}
+              className="mt-2 px-8  py-3 border font-sans bg-primary border-primary text-white rounded-full hover:bg-secondary hover:border-secondary transition"
+            >
+              ABOUT US
+            </button>
           </div>
         </div>
       </section>
@@ -133,11 +139,12 @@ const HomePage = () => {
           />
         </div>
         <div className="flex justify-center font-sans mt-8">
-          <a href="/about" className="w-full sm:w-auto">
-            <button className="w-full sm:w-auto mt-4 px-6 sm:px-10 py-4 sm:py-5 border uppercase tracking-wide font-light bg-primary border-primary text-white rounded-full hover:bg-secondary hover:border-secondary hover:text-white transition-all duration-300 text-sm sm:text-base">
-              Frequently Asked Questions
-            </button>
-          </a>
+          <button
+            onClick={() => navigate("/about")}
+            className="w-full sm:w-auto mt-4 px-6 sm:px-10 py-4 sm:py-5 border uppercase tracking-wide font-light bg-primary border-primary text-white rounded-full hover:bg-secondary hover:border-secondary hover:text-white transition-all duration-300 text-sm sm:text-base"
+          >
+            Frequently Asked Questions
+          </button>
         </div>
       </section>
       <section

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/Logo.png";
 import footerImg from "../assets/Bitmap_footer.png";
 
@@ -32,24 +33,24 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">About</h4>
             <ul className="space-y-2 uppercase font-light font-sans text-gray-300">
               <li>
-                <a href="/shop" className=" text-base hover:underline">
+                <Link to="/shop" className=" text-base hover:underline">
                   Shop
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/plan_kitchen" className="hover:underline">
+                <Link to="/plan_kitchen" className="hover:underline">
                   Plan My Kitchen
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:underline">
+                <Link to="/about" className="hover:underline">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#gallery" className="hover:underline">
+                <Link to="/#gallery" className="hover:underline">
                   Gallery
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -59,24 +60,24 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Service</h4>
             <ul className="space-y-2 uppercase text-base font-light font-sans text-gray-300">
               <li>
-                <a href="/about" className="hover:underline">
+                <Link to="/about" className="hover:underline">
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/plan_kitchen" className="hover:underline">
+                <Link to="/plan_kitchen" className="hover:underline">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/shop" className="hover:underline">
+                <Link to="/shop" className="hover:underline">
                   How to Buy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/shop" className="hover:underline">
+                <Link to="/shop" className="hover:underline">
                   Downloads
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -86,24 +87,24 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Info</h4>
             <ul className="space-y-2 uppercase text-base font-light font-sans text-gray-300">
               <li>
-                <a href="/faq" className="hover:underline">
+                <Link to="/faq" className="hover:underline">
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/shop" className="hover:underline">
+                <Link to="/shop" className="hover:underline">
                   Delivery
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:underline">
+                <Link to="/about" className="hover:underline">
                   Terms
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:underline">
+                <Link to="/about" className="hover:underline">
                   Privacy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
