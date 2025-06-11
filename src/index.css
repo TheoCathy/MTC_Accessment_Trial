@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: #d4b254;
+  --color-secondary: #b69744;
+  --font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.arrow {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-color: #d4b254;
+  transition: border-color 0.3s ease;
+}
+
+.arrow:hover::before {
+  border-color: #b69744;
+}
+
+.arrow-left::before {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.arrow-right::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
