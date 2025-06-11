@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import { HiOutlineMenu, HiX, HiOutlineShoppingCart } from "react-icons/hi";
-import logo from "../assets/logo.png";
+import logo from "../assets/Logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
